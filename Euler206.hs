@@ -1,4 +1,4 @@
-hasSpecialForm :: Integer -> Bool
+hasSpecialForm :: Int -> Bool
 hasSpecialForm n = n > 10 ^ 18
                    && (n `mod` (n `div` 10 ^ 1) == 0)
                    && ((n `div` 10 ^ 2) `mod` (n `div` 10 ^ 3) == 9)
